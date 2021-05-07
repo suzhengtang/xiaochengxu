@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/youHui/youHui",
+    "pages/haoDian/haoDian",
+    "pages/my/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "测试项目",
+    "navigationBarBackgroundColor": "#ed7043",
+    "backgroundColor": "#ba5634"
+  },
+  "tabBar": {
+    "color": "#C0C0C0",
+    "selectedColor": "#ed7043",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/index.png",
+        "selectedIconPath": "static/images/select_index.png"
+      },
+      {
+        "pagePath": "pages/youHui/youHui",
+        "text": "找优惠",
+        "iconPath": "static/images/youhui.png",
+        "selectedIconPath": "static/images/select_youhui.png"
+      },
+      {
+        "pagePath": "pages/haoDian/haoDian",
+        "text": "找好店",
+        "iconPath": "static/images/haodian.png",
+        "selectedIconPath": "static/images/select_haodian.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/images/my.png",
+        "selectedIconPath": "static/images/select_my.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
