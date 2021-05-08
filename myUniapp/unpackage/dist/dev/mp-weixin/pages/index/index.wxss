@@ -55,49 +55,10 @@
 	letter-spacing: 60rpx;
 	text-align: center;
 }
-.content .main-item {
-	padding: 0 0 20rpx 20rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	        flex-wrap: wrap;
-}
-.content .main-item .item-one {
-	width: 345rpx;
-	background-color: #fff;
-	padding: 30rpx;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0 20rpx 20rpx 0;
-}
-.content .main-item .item-one .one-img {
-	width: 100%;
+.content .tip-show{
 	text-align: center;
-}
-.content .main-item .item-one .one-img .one-img-img{
-	width: 100%;
-}
-.content .main-item .item-one .one-dir{
-	color: #666;
-	font-size: 30rpx;
-}
-.content .main-item .item-one .one-dir .dir-top{
-	color: #ed7043;
-	font-size: 34rpx;
-}
-.content .main-item .item-one .one-dir .dir-top .remove-el{
+	margin-bottom: 30rpx;
 	color: #ccc;
 	font-size: 30rpx;
-	margin-left: 30rpx;
-	text-decoration: line-through;
-}
-.content .main-item .item-one .one-dir .dir-bottom{
-	text-overflow: ellipsis;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	margin-top: 20rpx;
 }
 

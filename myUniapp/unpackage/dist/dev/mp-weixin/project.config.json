@@ -12,16 +12,26 @@
   "projectname": "myUniapp",
   "condition": {
     "search": {
+      "current": -1,
       "list": []
     },
     "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "current": 0,
+      "list": [
+        {
+          "name": "商品列表",
+          "id": 0,
+          "pathName": "pages/goodsList/goodsList"
+        }
+      ]
     }
   }
 }

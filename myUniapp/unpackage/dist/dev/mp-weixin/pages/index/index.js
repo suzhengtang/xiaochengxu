@@ -135,40 +135,35 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}var shopList = function shopList() {__webpack_require__.e(/*! require.ensure | compontents/shopList */ "compontents/shopList").then((function () {return resolve(__webpack_require__(/*! ../../compontents/shopList.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    shopList: shopList },
+
   data: function data() {
     return {
       bannerImg: [
@@ -187,7 +182,8 @@ var _default =
       { text: '学习视频', id: 14, color: "skyblue" }],
 
       title: '推荐商品',
-      itemArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0] };
+      itemArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
+      tipShow: false };
 
   },
   onLoad: function onLoad() {
@@ -195,8 +191,51 @@ var _default =
   },
   methods: {
     itemClick: function itemClick(par) {
-      console.log(par);
-    } } };exports.default = _default;
+      switch (par) {
+        case 11:
+          // console.log('商品列表')
+          uni.navigateTo({
+            url: '/pages/goodsList/goodsList' });
+
+          break;
+        case 12:
+          console.log('联系我们');
+          break;
+        case 13:
+          console.log('社区图片');
+          break;
+        case 14:
+          console.log('学习视频');
+          break;}
+
+    },
+    detailsItemFn: function detailsItemFn(item) {
+      uni.navigateTo({
+        url: '/pages/details/details?id=' + item });
+
+    } },
+
+  onPullDownRefresh: function onPullDownRefresh() {//手动触发下拉刷新
+    setTimeout(function () {
+      uni.stopPullDownRefresh();
+      uni.showToast({
+        title: '刷新成功' });
+
+    }, 1000);
+  },
+  onReachBottom: function onReachBottom() {var _this = this; // 页面滚动到底部的事件
+    if (this.itemArr.length < 14) {
+      setTimeout(function () {
+        uni.showToast({
+          title: '加载中' });
+
+        _this.itemArr = [].concat(_toConsumableArray(_this.itemArr), [11, 12, 13, 14]);
+      }, 1000);
+    } else {
+      this.tipShow = true;
+    }
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */

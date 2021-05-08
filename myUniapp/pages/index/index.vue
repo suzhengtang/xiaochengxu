@@ -16,22 +16,17 @@
 		<view class="tuijian">
 			{{ title }}
 		</view>
-		<view class="main-item">
-			<view class="item-one" v-for="(item, index) in itemArr" :key="index">
-				<view class="one-img">
-					<image class="one-img-img" mode="widthFix" src="../../static/images/meinv.png"></image>
-				</view>
-				<view class="one-dir">
-					<view class="dir-top"><span>美女</span><span class="remove-el">帅哥</span></view>
-					<view class="dir-bottom">我很漂亮并且也很友好，和我交朋友的人都很幸运</view>
-				</view>
-			</view>
-		</view>
+		<shop-list :dataList="itemArr" @detailsItemFn="detailsItemFn"></shop-list>
+		<view class="tip-show" v-show="tipShow">-----我是有底线的-----</view>
 	</view>
 </template>
 
 <script>
+	import shopList from '../../compontents/shopList.vue'
 	export default {
+		components: {
+			shopList
+		},
 		data() {
 			return {
 				bannerImg: [
@@ -50,7 +45,8 @@
 					{text: '学习视频', id: 14, color: "skyblue"},
 				],
 				title: '推荐商品',
-				itemArr: [1,2,3,4,5,6,7,8,9,0]
+				itemArr: [1,2,3,4,5,6,7,8,9,0],
+				tipShow: false
 			}
 		},
 		onLoad() {
@@ -58,7 +54,48 @@
 		},
 		methods: {
 			itemClick(par) {
-				console.log(par)
+				switch(par){
+					case 11:
+						// console.log('商品列表')
+						uni.navigateTo({
+							url: '/pages/goodsList/goodsList'
+						})
+						break
+					case 12:
+						console.log('联系我们')
+						break
+					case 13:
+						console.log('社区图片')
+						break
+					case 14:
+						console.log('学习视频')
+						break
+				}
+			},
+			detailsItemFn(item) {
+				uni.navigateTo({
+					url: '/pages/details/details?id=' + item
+				})
+			}
+		},
+		onPullDownRefresh() { //手动触发下拉刷新
+			setTimeout(function() {
+				uni.stopPullDownRefresh()
+				uni.showToast({
+					title: '刷新成功'
+				})
+			}, 1000)
+		},
+		onReachBottom() { // 页面滚动到底部的事件
+			if (this.itemArr.length < 14) {
+				setTimeout(() => {
+					uni.showToast({
+						title: '加载中'
+					})
+					this.itemArr = [...this.itemArr, ...[11, 12, 13, 14]]
+				},1000)
+			} else {
+				this.tipShow = true
 			}
 		}
 	}
@@ -114,48 +151,10 @@
 		letter-spacing: 60rpx;
 		text-align: center;
 	}
-	.content .main-item {
-		padding: 0 0 20rpx 20rpx;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.content .main-item .item-one {
-		width: 345rpx;
-		background-color: #fff;
-		padding: 30rpx;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		margin: 0 20rpx 20rpx 0;
-	}
-	.content .main-item .item-one .one-img {
-		width: 100%;
+	.content .tip-show{
 		text-align: center;
-	}
-	.content .main-item .item-one .one-img .one-img-img{
-		width: 100%;
-	}
-	.content .main-item .item-one .one-dir{
-		color: #666;
-		font-size: 30rpx;
-	}
-	.content .main-item .item-one .one-dir .dir-top{
-		color: #ed7043;
-		font-size: 34rpx;
-	}
-	.content .main-item .item-one .one-dir .dir-top .remove-el{
+		margin-bottom: 30rpx;
 		color: #ccc;
 		font-size: 30rpx;
-		margin-left: 30rpx;
-		text-decoration: line-through;
-		
-	}
-	.content .main-item .item-one .one-dir .dir-bottom{
-		text-overflow: ellipsis;
-		overflow: hidden;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 2;
-		margin-top: 20rpx;
 	}
 </style>

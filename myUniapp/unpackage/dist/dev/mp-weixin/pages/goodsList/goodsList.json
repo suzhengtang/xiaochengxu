@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "商品列表",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "shop-list": "/compontents/shopList"

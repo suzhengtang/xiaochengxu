@@ -1,0 +1,1 @@
+<view class="goods-list"><shop-list vue-id="e058d6d4-1" dataList="{{dataLists}}" data-event-opts="{{[['^detailsItemFn',[['detailsItemFn']]]]}}" bind:detailsItemFn="__e" bind:__l="__l"></shop-list><view hidden="{{!(tipShow)}}" class="tip-show">-----我是有底线的-----</view></view>
