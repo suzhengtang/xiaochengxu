@@ -1,0 +1,21 @@
+.details {
+  width: 100%;
+  text-align: center;
+  padding-top: 100rpx;
+  color: #666;
+}
+.details .btn-bottom {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+.details .import-num {
+  color: #ed7043;
+  padding: 0 20rpx;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+

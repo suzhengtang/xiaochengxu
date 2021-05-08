@@ -1,1 +1,1 @@
-<view class="details">我是详情页面</view>
+<view class="details">我是id为<label class="import-num _span">{{number}}</label>的商品详情页面<view class="btn-bottom"><uni-goods-nav vue-id="ffa9e60c-1" fill="{{true}}" options="{{options}}" buttonGroup="{{buttonGroup}}" data-event-opts="{{[['^click',[['onClick']]],['^buttonClick',[['buttonClick']]]]}}" bind:click="__e" bind:buttonClick="__e" bind:__l="__l"></uni-goods-nav></view></view>

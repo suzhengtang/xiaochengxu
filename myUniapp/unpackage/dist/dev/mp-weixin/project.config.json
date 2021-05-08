@@ -27,9 +27,9 @@
       "current": 0,
       "list": [
         {
-          "name": "商品列表",
+          "name": "商品详情",
           "id": 0,
-          "pathName": "pages/goodsList/goodsList"
+          "pathName": "pages/details/details"
         }
       ]
     }

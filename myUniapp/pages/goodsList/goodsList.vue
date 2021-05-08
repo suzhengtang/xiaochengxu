@@ -38,7 +38,7 @@
 					uni.showToast({
 						title: '加载中'
 					})
-					this.dataLists = [...this.dataLists, ...[11, 12, 13, 14]]
+					this.dataLists = [...this.dataLists, ...[111, 122, 133, 144]]
 				},1000)
 			} else {
 				this.tipShow = true

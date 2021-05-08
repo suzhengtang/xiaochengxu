@@ -82,8 +82,8 @@
 		"current": 0,
 		"list": [
 			{
-				"name":"商品列表",
-				"path":"pages/goodsList/goodsList"
+				"name":"商品详情",
+				"path":"pages/details/details"
 			}
 		]
 	}
