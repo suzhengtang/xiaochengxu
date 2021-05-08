@@ -3,7 +3,7 @@
 		<view class="banner">
 			<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval">
 				<swiper-item v-for="item in bannerImg" :key="item.id">
-					<image :src="item.url"></image>
+					<image class="banner-img" :src="item.url"></image>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -101,12 +101,23 @@
 	}
 </script>
 
-<style>
+<style lang="less">
 	.content {
 		width: 100%;
 		height: 100%;
 		background-color: #eee;
 		overflow: hidden;
+		.banner {
+			width: 100%;
+			height: 375rpx;
+			.swiper {
+				height: 375rpx;
+				.banner-img{
+					width: 100%;
+					height: 375rpx;
+				}
+			}
+		}
 	}
 	.content .nav {
 		width: 750rpx;
@@ -137,7 +148,7 @@
 		background-color: skyblue
 	}
 	.content .nav .icon-text {
-		font-size: 12px;
+		font-size: 30rpx;
 		color: #666;
 		display: inline-block;
 	}
