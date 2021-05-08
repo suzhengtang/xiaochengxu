@@ -67,7 +67,9 @@
 						})
 						break
 					case 13:
-						console.log('社区图片')
+						uni.navigateTo({
+							url: '/pages/picture/picture'
+						})
 						break
 					case 14:
 						console.log('学习视频')

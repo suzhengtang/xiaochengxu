@@ -49,6 +49,13 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+		{
+            "path" : "pages/picture/picture",
+            "style" : {
+                "navigationBarTitleText": "社区图片",
+                "enablePullDownRefresh": false
+            }
         }
     ],
 	"globalStyle": {
@@ -90,8 +97,8 @@
 		"current": 0,
 		"list": [
 			{
-				"name":"关于我们",
-				"path":"pages/oboutMe/oboutMe"
+				"name":"社区图片",
+				"path":"pages/picture/picture"
 			}
 		]
 	}
