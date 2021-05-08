@@ -5,7 +5,8 @@
     "pages/haoDian/haoDian",
     "pages/my/my",
     "pages/goodsList/goodsList",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/oboutMe/oboutMe"
   ],
   "subPackages": [],
   "window": {

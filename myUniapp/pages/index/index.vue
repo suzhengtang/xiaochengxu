@@ -62,7 +62,9 @@
 						})
 						break
 					case 12:
-						console.log('联系我们')
+						uni.navigateTo({
+							url: '/pages/oboutMe/oboutMe'
+						})
 						break
 					case 13:
 						console.log('社区图片')

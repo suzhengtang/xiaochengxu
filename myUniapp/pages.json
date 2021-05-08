@@ -41,6 +41,14 @@
                 "navigationBarTitleText": "商品详情",
                 "enablePullDownRefresh": false
             }
+        },
+		{
+            "path" : "pages/oboutMe/oboutMe",
+            "style" : {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {
@@ -82,8 +90,8 @@
 		"current": 0,
 		"list": [
 			{
-				"name":"商品详情",
-				"path":"pages/details/details"
+				"name":"关于我们",
+				"path":"pages/oboutMe/oboutMe"
 			}
 		]
 	}
