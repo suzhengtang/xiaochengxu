@@ -27,9 +27,9 @@
       "current": 0,
       "list": [
         {
-          "name": "商品详情",
+          "name": "关于我们",
           "id": 0,
-          "pathName": "pages/details/details"
+          "pathName": "pages/oboutMe/oboutMe"
         }
       ]
     }
