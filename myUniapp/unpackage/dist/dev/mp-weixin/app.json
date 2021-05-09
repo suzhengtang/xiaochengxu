@@ -6,7 +6,8 @@
     "pages/my/my",
     "pages/goodsList/goodsList",
     "pages/details/details",
-    "pages/oboutMe/oboutMe"
+    "pages/oboutMe/oboutMe",
+    "pages/picture/picture"
   ],
   "subPackages": [],
   "window": {

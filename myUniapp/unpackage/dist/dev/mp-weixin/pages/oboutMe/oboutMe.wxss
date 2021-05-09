@@ -26,4 +26,12 @@
   line-height: 46rpx;
   height: auto;
 }
+.about-me .me-map {
+  width: 750rpx;
+  height: 750rpx;
+}
+.about-me .me-map .me-map-map {
+  width: 750rpx;
+  height: 750rpx;
+}
 

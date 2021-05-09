@@ -27,9 +27,9 @@
       "current": 0,
       "list": [
         {
-          "name": "关于我们",
+          "name": "社区图片",
           "id": 0,
-          "pathName": "pages/oboutMe/oboutMe"
+          "pathName": "pages/picture/picture"
         }
       ]
     }
