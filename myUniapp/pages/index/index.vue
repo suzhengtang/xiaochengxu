@@ -92,9 +92,13 @@
 		},
 		onReachBottom() { // 页面滚动到底部的事件
 			if (this.itemArr.length < 14) {
+				uni.showLoading({
+					title: '正在加载'
+				})
 				setTimeout(() => {
+					uni.hideLoading();
 					uni.showToast({
-						title: '加载中'
+						title: '加载成功'
 					})
 					this.itemArr = [...this.itemArr, ...[11, 12, 13, 14]]
 				},1000)
