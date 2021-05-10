@@ -14,4 +14,8 @@
 
 <style>
 	/*每个页面公共css */
+	view, span {
+		font-size: 30rpx;
+		color: #666;
+	}
 </style>

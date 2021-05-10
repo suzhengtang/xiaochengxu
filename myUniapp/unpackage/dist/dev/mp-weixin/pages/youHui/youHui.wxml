@@ -1,1 +1,1 @@
-<view>找优惠</view>
+<view class="youhui"><block wx:for="{{listArr}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['clickDetal',[index]]]]]}}" class="youhui-item" bindtap="__e"><view class="left"><image mode="heightFix" src="{{item.src}}"></image></view><view class="right"><view class="title">{{item.title}}</view><view class="content"><view class="content-left">位置：<label class="_span">{{item.address}}</label></view><view class="content-right">浏览量:<label class="_span">{{item.number}}</label></view></view></view></view></block></view>
