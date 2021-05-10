@@ -1,0 +1,59 @@
+.youhui {
+  width: 750rpx;
+  height: auto;
+  background-color: #eee;
+  padding: 20rpx;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.youhui .youhui-item {
+  width: 100%;
+  height: 240rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 20rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.youhui .youhui-item .left {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+.youhui .youhui-item .left image {
+  height: 200rpx;
+}
+.youhui .youhui-item .right {
+  width: 470rpx;
+  height: 100%;
+  position: relative;
+}
+.youhui .youhui-item .right .content {
+  width: 100%;
+  height: 40rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.youhui .youhui-item .right .content .content-left,
+.youhui .youhui-item .right .content .content-right {
+  color: #ccc;
+}
+.youhui .youhui-item .right .content .content-left ._span,
+.youhui .youhui-item .right .content .content-right ._span {
+  color: #ccc;
+}
+.youhui .youhui-item:last-child {
+  margin-bottom: 0;
+}
+
